@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Repostería Fina</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff5f8;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: #c98ca7;
+      color: white;
+      padding: 40px 20px;
+    }
+    section {
+      padding: 30px 20px;
+    }
+    .btn {
+      background: #25D366;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      display: inline-block;
+      margin-top: 15px;
+    }
+    footer {
+      background: #eee;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Repostería Fina</h1>
+  <p>Pasteles y postres artesanales hechos con amor</p>
+  <a class="btn" href="https://wa.me/52TUNUMERO?text=Hola%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a>
+</header>
+
+<section>
+  <h2>Nuestros Productos</h2>
+  <p>Pasteles personalizados, cupcakes, postres gourmet.</p>
+</section>
+
+<section>
+  <h2>Sobre Nosotros</h2>
+  <p>Somos una repostería dedicada a crear momentos dulces y especiales.</p>
+</section>
+
+<footer>
+  © 2026 Repostería Fina
+</footer>
+
+</body>
+</html>
