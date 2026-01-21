@@ -44,11 +44,73 @@
   padding: 10px;
 }
   }
+    .menu {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 140px;
+}
+
+.submenu li {
+  padding: 8px 15px;
+}
+
+.submenu li a {
+  color: #c98ca7;
+  font-weight: normal;
+}
+
+.submenu li:hover {
+  background: #f7e1ea;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
   </style>
 </head>
 <body>
 
 <header>
+  <nav class="menu">
+  <ul>
+    <li class="dropdown">
+      <a href="#">Productos ▾</a>
+      <ul class="submenu">
+        <li><a href="#">Pasteles</a></li>
+        <li><a href="#">Galletas</a></li>
+        <li><a href="#">Cupcakes</a></li>
+        <li><a href="#">Otros</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
    <img src="logo cakequisito.jpg" alt="Cakequisito Repostería Fina" class="logo">
   <p>Pasteles y postres artesanales hechos con amor</p>
   <a class="btn" href="https://wa.me/525546366071?text=Hola%20quiero%20hacer%20un%20pedido">Pedir por WhatsApp</a>
