@@ -12,6 +12,8 @@
       text-align: center;
     }
     header {
+      display: flex;
+      justify-content: flex-end;
       background: #c98ca7;
       color: white;
       padding: 40px 20px 60px;
@@ -46,19 +48,19 @@
   padding: 10px;
 }
   }
-.menu {
+.main-menu {
   position: absolute;
   top: 20px;
   right: 30px;
   z-index: 10;
 }
-.menu ul {
+.main-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.menu a {
+.main-menu a {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -100,8 +102,8 @@
 <body>
 
 <header>
-  <nav class="menu">
-  <ul>
+  <nav class="navbar">
+  <ul class="main-menu">
     <li class="dropdown">
       <a href="#">Productos ▾</a>
       <ul class="submenu">
