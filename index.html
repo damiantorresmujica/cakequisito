@@ -134,9 +134,12 @@
   }
 
   .submenu {
+   display: none;
     position: static;
     background: #f7e1ea;
     margin-top: 10px;
+    border-radius: 5px
+    
   }
 }
 /* ===== HAMBURGUESA ===== */
@@ -218,9 +221,21 @@
   © 2026 Repostería Fina
 </footer>
 <script>
-  function toggleMenu() {
-    document.querySelector('.main-menu').classList.toggle('active');
-  }
+const hamburger = document.querySelector('.hamburger');
+  const mainMenu = document.querySelector('.main-menu');
+  const dropdown = document.querySelector('.dropdown');
+  const submenu = document.querySelector('.submenu');
+
+  // Abre/cierra menú principal
+  hamburger.addEventListener('click', () => {
+    mainMenu.classList.toggle('active');
+  });
+
+  // Abre/cierra submenú "Productos" en celular
+  dropdown.addEventListener('click', (e) => {
+    e.preventDefault(); // evita que haga scroll
+    submenu.classList.toggle('active');
+  });
 </script>
 </body>
 </html>
