@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Repostería Fina</title>
   <style>
@@ -93,6 +94,52 @@
 .dropdown:hover .submenu {
   display: block;
 }
+/* =========================
+   RESPONSIVE PARA CELULAR
+   ========================= */
+@media (max-width: 768px) {
+
+  header {
+    padding: 30px 15px 40px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  header p {
+    font-size: 15px;
+    margin: 10px 0 20px;
+  }
+  /* Botón WhatsApp centrado */
+  .btn {
+    position: static;
+    transform: none;
+    display: inline-block;
+    width: 90%;
+    max-width: 320px;
+    font-size: 18px;
+  }
+
+  /* Menú Productos arriba */
+  .main-menu {
+    position: static;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .main-menu a {
+    font-size: 18px;
+  }
+
+  .submenu {
+    position: static;
+    background: #f7e1ea;
+    margin-top: 10px;
+  }
+}
+
   </style>
 </head>
 <body>
