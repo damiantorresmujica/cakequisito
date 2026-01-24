@@ -139,12 +139,53 @@
     margin-top: 10px;
   }
 }
+/* ===== HAMBURGUESA ===== */
 
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===== SOLO CELULAR ===== */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .main-menu {
+    display: none;
+    background: #c98ca7;
+    padding: 15px 0;
+    border-radius: 10px;
+  }
+
+  .main-menu.active {
+    display: block;
+  }
+
+  .main-menu li {
+    padding: 10px 0;
+  }
+
+  .submenu {
+    display: block;
+    position: static;
+    background: #f7e1ea;
+    margin-top: 10px;
+  }
+}
   </style>
 </head>
 <body>
 
 <header>
+ <div class="hamburger" onclick="toggleMenu()">☰</div>
   <nav class="menu">
   <ul>
     <li class="dropdown">
@@ -176,6 +217,10 @@
 <footer>
   © 2026 Repostería Fina
 </footer>
-
+<script>
+  function toggleMenu() {
+    document.querySelector('.main-menu').classList.toggle('active');
+  }
+</script>
 </body>
 </html>
